@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="card">
+    <h2 id="welcome"></h2>
+    <button id="logout">Logout</button>
+  </div>
+  <script>
+    const user = JSON.parse(localStorage.getItem("user") || "null");
+    if (!user) window.location.href = "/login.html";
+    else document.getElementById("welcome").textContent = "Welcome, " + user.name;
+
+    document.getElementById("logout").onclick = () => {
+      localStorage.removeItem("user");
+      window.location.href = "/login.html";
+    };
+  </script>
+</body>
+</html>
