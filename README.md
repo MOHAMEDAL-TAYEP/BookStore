@@ -240,4 +240,4 @@ A `PENDING` or `PAID` order can be `CANCELLED`. Stock is restored and any comple
 
 ## Author
 
-**AL Tayep**: [GitHub](https://github.com/<your-username>)
+**AL Tayep**: [GitHub](https://github.com/MOHAMEDAL-TAYEP)
